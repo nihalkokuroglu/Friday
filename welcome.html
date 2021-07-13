@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS --->
+    <link
+            rel="stylesheet"
+            href="assets/vendor/bootstrap/css/welcome.css"
+    />
+
     <title>Friday Accounting</title>
 </head>
 <body>
 
-    <h2> Welcome to Friday Accounting</h2>
+    <div class="login">
+        <div class="card">
+            <div class="card-header text-center">
+<!--                <img-->
+<!--                        class="logo-img"-->
+<!--                        src="assets/images/Cybertek_Logo.png"-->
+<!--                        height="45"-->
+<!--                        alt="logo"-->
+<!--                />-->
+                <h2>Friday Accounting</h2>
+            </div>
+            <div class="card-body">
+                <form action="homepage.html">
+                    <div>
+                        <input
+                                class="form-control form-control-lg"
+                                id="username"
+                                type="username"
+                                placeholder="Username"
+                        />
+                    </div>
 
-    <h4>Username:</h4>
-    <input
-            class="form-control form-control-lg"
-            id="username"
-            type="username"
-            placeholder="Email address"
-    />
+                    <div>
+                        <input
+                                class="form-control form-control-lg"
+                                id="password"
+                                type="password"
+                                placeholder="Password"
+                        />
+                    </div>
 
-    <h4>Password:</h4>
-    <input
-            class="form-control form-control-lg"
-            id="password"
-            type="password"
-            placeholder="Password"
-    />
+                    <div>
+                        <button>Register</button>
+                        <button>Sign in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
