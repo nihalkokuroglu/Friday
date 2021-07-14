@@ -1,14 +1,18 @@
+body{
+background-color: #f0f0f5;
+}
+
 div.login {
-          position: sticky;
-          padding: 200px;
-          background-color: rgba(0,0,0,.03);
+          background-color:rgba(255, 99, 71, 0.5);
           }
 
 div.card{
-          padding:.75rem 1.25rem;
-          -ms-flex-direction:column;
-          flex-direction:column;
-          word-wrap:break-word;
+        position: fixed;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 500px;
+          height: 350px;
           background-color:#fff;
           background-clip:border-box;
           border:1px solid rgba(0,0,0,.125);
@@ -16,13 +20,71 @@ div.card{
           }
 
 div.card-header{
-          padding:.75rem 1.25rem;
+            font-family: Lucida Console, Monospace;
+            font-size: 25px;
+           text-align: center;
+
           margin-bottom:0;
           border-bottom:1px solid rgba(0,0,0,.125)
           }
+h2 {
+color: #2C4C89
+}
 
 div.card-body{
-          padding:.75rem 1.25rem;
+
+          -ms-flex:1 1 auto;
+          flex:1 1 auto;
+          padding:1.25rem;
           margin-bottom:0;
-          border-bottom:1px solid rgba(0,0,0,.125)
           }
+
+div.form-group{
+              width: 94%;
+              margin: 8px 0;
+              display: inline-block;
+              border-radius: 4px;
+              box-sizing: border-box;
+        }
+
+input.form-control{
+            display:block;
+            width:100%;
+            padding:.375rem .75rem;
+            font-size:1rem;
+            line-height:1.5;
+            color:#495057;
+            background-color:#fff;
+            background-clip:padding-box;
+            border:1px solid #ced4da;
+            border-radius:.25rem;
+}
+
+button.btn-register{
+            width:49.5%;
+            padding:.375rem .75rem;
+            font-size:1rem;
+            line-height:1.5;
+            color:#FFFFFF;
+            background-color:#26B97B;
+            background-clip:padding-box;
+            border:1px solid #ced4da;
+            border-radius:.25rem;
+}
+
+button.btn-sign{
+            width:49.5%;
+            padding:.375rem .75rem;
+            font-size:1rem;
+            line-height:1.5;
+            color:#FFFFFF;
+            background-color:#268AB9;
+            background-clip:padding-box;
+            border:1px solid #ced4da;
+            border-radius:.25rem;
+}
+
+span.custom-control-label{
+            font-family: Lucida Console, Monospace;
+            color: #939393;
+}
