@@ -10,17 +10,85 @@
     <!-- Bootstrap CSS --->
     <link
             rel="stylesheet"
-            href="assets/vendor/bootstrap/css/welcome.css"
+            href="assets/vendor/bootstrap/css/homepage.css"
     />
 
     <link
             rel="stylesheet"
-            href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css"
+            href="assets/vendor/bootstrap/css/fontawesome-all.css"
     />
+
+    <link
+            rel="stylesheet"
+            href="assets/vendor/bootstrap/js/homepage.js"
+    />
+
+<!--    <link-->
+<!--            rel="stylesheet"-->
+<!--            href="assets/vendor/bootstrap/css/bootstrap.min.css"-->
+<!--    />-->
 
     <title>Friday Accounting</title>
 </head>
 <body>
-<h2>Friday Accounting</h2>
+    <div class="main-container">
+        <nav class="navigationbar">
+            <h2>Friday Accounting</h2>
+        </nav>
+    <div class="left-side-bar">
+        <button class="dropdown-btn">About
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <button class="dropdown-btn">Dropdown
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <button class="dropdown-btn">Settings
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <button class="dropdown-btn">Contact us
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+
+    </div>
+<script>
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
 </body>
 </html>

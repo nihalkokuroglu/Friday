@@ -1,0 +1,84 @@
+body{
+        background-color: #f0f0f5;
+}
+
+nav.navigationbar{
+         font-family: Lucida Console, Monospace;
+         font-size: 20px;
+         padding:.5rem 1rem;
+         position: fixed;
+         width: 100%;
+         left: 0;
+         top: 0;
+         margin:0;
+         background-color:#FFFFFF
+         }
+h2 {
+         color: #2C4C89
+         }
+
+div.left-side-bar{
+        position:fixed;
+        width: 250px;
+        height: 100%;
+        left: 0;
+        top: 100px;
+        margin:0;
+        font-family: Lucida Console, Monospace;
+        font-size: 15px;
+        padding:.5rem 1rem;
+        background-color:#330A7A
+}
+
+button.dropdown-btn {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-family: Lucida Console, Monospace;
+        font-size: 20px;
+        color: #C19DFF;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+      }
+
+
+div.dropdown-container {
+      background-color: #451992;
+      padding-left: 10px;
+      display: none;
+    }
+
+i.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+button.dropdown-btn:hover, div.left-side-bar a:hover {
+        color: #f1f1f1;
+        background-color: #451992;
+        border-radius:.25rem
+      }
+
+div.left-side-bar a {
+        padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                color: #C19DFF;
+                display: block;
+                border: none;
+                background: none;
+                background-color: #451992;
+                width: 90%;
+                text-align: left;
+                cursor: pointer;
+                outline: none;
+      }
+
+button.active {
+        background-color: #451992;
+        color: white;
+      }
